@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<data>
+	<Item>
+		<Keywords maxWord="7" minWord="5">
+			<Words>
+				<word>name</word>
+			</Words>
+			<Words>
+				<word>change</word>
+			</Words>
+			<Words>
+				<word>my</word>
+			</Words>
+		</Keywords>
+		<Var max="3">
+			<word>to</word>
+			<word>with</word>
+		</Var>
+		<Reply>
+			<rep>Ok from now on I'll call you ?1</rep>
+			<rep>Alright I'll call you ?1</rep>
+			<rep>Ok I recorded your name I will call you now ?1</rep>
+		</Reply>
+		<Actions>
+			<action>settings name ?1</action>
+		</Actions>
+	</Item>
+	<Item id="mise_a_jour_nom" needId="yes_no">
+		<Keywords maxWord="6" minWord="3">
+			<Words>
+				<word>my</word>
+				<word>i</word>
+			</Words>
+			<Words>
+				<word>name</word>
+				<word>ourselves</word>
+			</Words>
+			<NoWords>
+				<word>what</word>
+			</NoWords>
+		</Keywords>
+		<Var max="3">
+			<word>is</word>
+			<word>ourselves</word>
+		</Var>
+		<Reply>
+			<condition if="?1=?name">
+				<rep>Ok, I asked myself, but now I know :)</rep>
+				<rep>That's what I believed, you're called ?name</rep>
+			</condition>
+			<else>
+				<rep>I thought you were calling ?name, so I updated your name</rep>
+				<rep>Ah, okay, I did not know, I made the update!</rep>
+			</else>
+		</Reply>
+		<Actions>
+			<condition if="?1!?name">
+				<action>settings name ?1</action>
+			</condition>
+		</Actions>
+	</Item>
+	<Item>
+		<Keywords maxWord="3" minWord="2">
+			<Words>
+                                <word>opens</word>
+                                <word>show</word>
+			</Words>
+			<Words>
+				<word>settings</word>
+				<word>configuration</word>
+			</Words>
+		</Keywords>
+		<Reply>
+			<rep>Okay !</rep>
+		</Reply>
+		<Actions>
+			<action>settings show</action>
+		</Actions>
+	</Item>
+</data>

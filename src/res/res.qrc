@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/XML">
+        <file>ControlSettingsData_fr.xml</file>
+        <file>ControlSettingsData_en.xml</file>
+    </qresource>
+</RCC>
