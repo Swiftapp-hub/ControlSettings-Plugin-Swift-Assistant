@@ -6,7 +6,7 @@ ControlSettings is a plugin for [Swift Assistant](https://github.com/Swiftapp-hu
 
 ## Installation
 
-1. [Download]() the plugin
+1. [Download](https://github.com/Swiftapp-hub/ControlSettings-Plugin-Swift-Assistant/releases/) the plugin
 2. Then move it to the ~/SwiftPlugins folder
 3. If SwiftAssistant is already open, go to settings and click Refresh
 
