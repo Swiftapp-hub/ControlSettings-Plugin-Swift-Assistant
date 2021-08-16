@@ -22,7 +22,7 @@ QT             += core
 TARGET          = $$qtLibraryTarget(controlsettings)
 #! [0]
 
-EXAMPLE_FILES = src/res/controlesettings.json
+EXAMPLE_FILES = src/res/controlsettings.json
 
 INSTALLS += target
 

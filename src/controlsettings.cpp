@@ -20,7 +20,7 @@
 #include <QFile>
 #include <QLocale>
 
-QString ControleSettings::getDataXml()
+QString ControlSettings::getDataXml()
 {
     QString locale = QLocale::system().name().section('_', 0, 0);
     QFile file(":/XML/ControlSettingsData_"+locale+".xml");
@@ -32,12 +32,12 @@ QString ControleSettings::getDataXml()
     return file.readAll();
 }
 
-QString ControleSettings::pluginIid()
+QString ControlSettings::pluginIid()
 {
     return "fr.swift.controlsettings";
 }
 
-QList<QString> ControleSettings::getCommande()
+QList<QString> ControlSettings::getCommande()
 {
     QList<QString> list;
     QString locale = QLocale::system().name().section('_', 0, 0);
@@ -48,6 +48,6 @@ QList<QString> ControleSettings::getCommande()
     return list;
 }
 
-void ControleSettings::execAction(QList<QString>) {}
+void ControlSettings::execAction(QList<QString>) {}
 
-void ControleSettings::messageReceived(QString, QString) {}
+void ControlSettings::messageReceived(QString, QString) {}

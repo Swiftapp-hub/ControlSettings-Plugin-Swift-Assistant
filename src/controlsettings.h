@@ -22,10 +22,10 @@
 #include <QtPlugin>
 #include "plugininterface.h"
 
-class ControleSettings : public QObject, PluginInterface
+class ControlSettings : public QObject, PluginInterface
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "fr.swiftapp.linux.plugin.ControleSettings" FILE "res/controlesettings.json")
+    Q_PLUGIN_METADATA(IID "fr.swiftapp.linux.plugin.ControlSettings" FILE "res/controlsettings.json")
     Q_INTERFACES(PluginInterface)
 
 public:
