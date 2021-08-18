@@ -12,7 +12,7 @@ ControlSettings is a plugin for [Swift Assistant](https://github.com/Swiftapp-hu
 
 ## Manual build
 
-Follow these steps if you want to compile Swift Assistant on your own
+Follow these steps if you want to compile ControlSettings on your own
 
 ### Dependencies
 
@@ -31,7 +31,7 @@ I recommend you to install Qt with the official installer from the Qt site
 You need to run the following commands to compile ControlSettings:
 
 ```bash
-cd "FOLDER_OF_GIT_CLONE"/ControlSettings
+cd "FOLDER_OF_GIT_CLONE"
 ```
 
 ```bash
