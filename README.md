@@ -4,6 +4,8 @@
 
 ControlSettings is a plugin for [Swift Assistant](https://github.com/Swiftapp-hub/Swift-Assistant) that allows you to manage settings with commands!
 
+Compatible with Swift Assistant version 1.0.1 or higher.
+
 ## Installation
 
 1. [Download](https://github.com/Swiftapp-hub/ControlSettings-Plugin-Swift-Assistant/releases/) the plugin
