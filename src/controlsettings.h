@@ -36,7 +36,7 @@ public:
     QObject* getObject() { return this; }
 
 signals:
-    void sendMessage(QString reply, bool isFin, QString typeMessage, QString url);
+    void sendMessage(QString reply, bool isFin, QString typeMessage, QList<QString> url, QList<QString> textUrl);
     void sendMessageToQml(QString message, QString pluginIid);
     void showQml(QString qml, QString iid);
 
