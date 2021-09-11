@@ -1,16 +1,16 @@
 # ControlSettings
 
-[![License](https://img.shields.io/badge/license-GPLv3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html) [![GitHub issues](https://img.shields.io/github/issues/Swiftapp-hub/ControlSettings-Plugin-Swift-Assistant.svg)](https://github.com/Swiftapp-hub/ControlSettings-Plugin-Swift-Assistant/issues) [![Maintained](https://img.shields.io/maintenance/yes/2021.svg)](https://github.com/Swiftapp-hub/ControlSettings-Plugin-Swift-Assistant/commits/develop)
+[![License](https://img.shields.io/badge/license-GPLv3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html) [![GitHub issues](https://img.shields.io/github/issues/Swiftapp-hub/ControlSettings-Plugin-Swifty-Assistant.svg)](https://github.com/Swiftapp-hub/ControlSettings-Plugin-Swifty-Assistant/issues) [![Maintained](https://img.shields.io/maintenance/yes/2021.svg)](https://github.com/Swiftapp-hub/ControlSettings-Plugin-Swifty-Assistant/commits/develop)
 
-ControlSettings is a plugin for [Swift Assistant](https://github.com/Swiftapp-hub/Swift-Assistant) that allows you to manage settings with commands!
+ControlSettings is a plugin for [Swifty Assistant](https://github.com/Swiftapp-hub/Swifty-Assistant) that allows you to manage settings with commands!
 
-Compatible with Swift Assistant version 1.0.1 or higher.
+Compatible with Swifty Assistant version 1.0.1 or higher.
 
 ## Installation
 
-1. [Download](https://github.com/Swiftapp-hub/ControlSettings-Plugin-Swift-Assistant/releases/) the plugin
-2. Then move it to the ~/SwiftPlugins folder
-3. If SwiftAssistant is already open, go to settings and click Refresh
+1. [Download](https://github.com/Swiftapp-hub/ControlSettings-Plugin-Swifty-Assistant/releases/) the plugin
+2. Then move it to the ~/SwiftyPlugins folder
+3. If SwiftyAssistant is already open, go to settings and click Refresh
 
 ## Manual build
 
