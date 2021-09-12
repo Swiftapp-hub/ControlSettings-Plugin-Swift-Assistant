@@ -1,6 +1,6 @@
-#   Swift Assistant is a simple, user-friendly assistant based on an extension system.
+#   ControlSettings is an extention for Swifty Assistant.
 #	
-#   Copyright (C) <2021>  <SwiftApp>
+#   Copyright (C) <2021>  <SwiftyApp>
 #
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -15,18 +15,16 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#! [0]
 TEMPLATE        = lib
 CONFIG         += plugin
 QT             += core
 TARGET          = $$qtLibraryTarget(controlsettings)
-#! [0]
 
 EXAMPLE_FILES = src/res/controlsettings.json
 
 INSTALLS += target
 
-CONFIG += install_ok  # Do not cargo-cult this!
+CONFIG += install_ok
 
 HEADERS += \
     src/controlsettings.h \
