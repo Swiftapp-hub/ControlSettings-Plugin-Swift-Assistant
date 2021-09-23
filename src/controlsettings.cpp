@@ -20,6 +20,11 @@
 #include <QFile>
 #include <QLocale>
 
+/**
+ * Return the keywords with the answers that match in xml format
+ *
+ * @return the keywords in xml format
+ */
 QString ControlSettings::getDataXml()
 {
     QString locale = QLocale::system().name().section('_', 0, 0);
@@ -32,11 +37,21 @@ QString ControlSettings::getDataXml()
     return file.readAll();
 }
 
-QString ControlSettings::pluginIid()
+/**
+ * Returns the unique identifier of the plugin
+ *
+ * @return the id
+ */
+QString ControlSettings::pluginId()
 {
     return "fr.swifty.controlsettings";
 }
 
+/**
+ * Returns a list of proposals related to the plugin
+ *
+ * @return the list of proposals
+ */
 QList<QString> ControlSettings::getCommande()
 {
     QList<QString> list;
@@ -48,6 +63,12 @@ QList<QString> ControlSettings::getCommande()
     return list;
 }
 
+/**
+ * Called when a special action is defined in the xml
+ */
 void ControlSettings::execAction(QList<QString>) {}
 
+/**
+ * Called when a custom interface is displayed and sends a message
+ */
 void ControlSettings::messageReceived(QString, QString) {}

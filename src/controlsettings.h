@@ -25,23 +25,23 @@
 class ControlSettings : public QObject, PluginInterface
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "fr.swiftapp.linux.plugin.ControlSettings" FILE "res/controlsettings.json")
+    Q_PLUGIN_METADATA(IID "fr.swiftapp.swiftyassistant.plugin.ControlSettings" FILE "res/controlsettings.json")
     Q_INTERFACES(PluginInterface)
 
 public:
     QString getDataXml() override;
-    QString pluginIid() override;
+    QString pluginId() override;
     void execAction(QList<QString> cmd) override;
     QList<QString> getCommande() override;
     QObject* getObject() { return this; }
 
 signals:
     void sendMessage(QString reply, bool isFin, QString typeMessage, QList<QString> url, QList<QString> textUrl);
-    void sendMessageToQml(QString message, QString pluginIid);
-    void showQml(QString qml, QString iid);
+    void sendMessageToQml(QString message);
+    void showQml(QString qml, QString id);
 
 public slots:
-    void messageReceived(QString message, QString pluginIid) override;
+    void messageReceived(QString message, QString pluginId) override;
 };
 
 #endif
