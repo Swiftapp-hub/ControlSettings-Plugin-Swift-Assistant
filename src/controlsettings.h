@@ -39,6 +39,7 @@ signals:
     void sendMessage(QString reply, bool isFin, QString typeMessage, QList<QString> url, QList<QString> textUrl);
     void sendMessageToQml(QString message);
     void showQml(QString qml, QString id);
+    void execAction(QString action);
 
 public slots:
     void messageReceived(QString message, QString pluginId) override;
