@@ -1,89 +1,91 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <data>
-	<Item>
-		<Keywords maxWord="7" minWord="5">
-			<Words>
-				<word>nom</word>
-			</Words>
-			<Words>
-				<word>change</word>
-			</Words>
-			<Words>
-				<word>mon</word>
-			</Words>
-		</Keywords>
-		<Var max="3">
-			<word>en</word>
-		</Var>
-		<Reply>
-			<rep>Ok, à partir de maintenant je vous appellerai ?1</rep>
-			<rep>D'accord, je vous appellerai ?1</rep>
-			<rep>Ok, j'ai enregistré votre nom, je vous appellerai maintenant ?1</rep>
-		</Reply>
-		<Actions>
-			<action>settings name ?1</action>
-		</Actions>
-	</Item>
-	<Item id="mise_a_jour_nom" needId="yes_no">
-		<Keywords maxWord="6" minWord="3">
-			<Words>
-				<word>je</word>
-				<word>mon</word>
-			</Words>
-			<Words>
-				<word>m'appelle</word>
-				<word>nomme</word>
-				<word>nom</word>
-			</Words>
-			<NoWords>
-				<word>comment</word>
-				<word>quel</word>
-			</NoWords>
-		</Keywords>
-		<Var max="3">
-			<word>est</word>
-			<word>m'appelle</word>
-			<word>nomme</word>
-			<word>nom</word>
-		</Var>
-		<Reply>
-			<condition if="?1=?name">
-				<rep>Ok, je me posais la question, mais maintenant je sais :)</rep>
-				<rep>C'est bien ce que je croyais, vous vous appelez ?name</rep>
-			</condition>
-			<else>
-				<rep>Moi, je pensais que vous vous appelliez ?name, j'ai donc mis à jour votre nom</rep>
-				<rep>Ah, d'accord, je ne savais pas, j'ai fait la mise à jour !</rep>
-			</else>
-		</Reply>
-		<Actions>
-			<condition if="?1!?name">
-				<action>settings name ?1</action>
-			</condition>
-		</Actions>
-	</Item>
-	<Item>
-		<Keywords maxWord="3" minWord="3">
-			<Words>
-				<word>ouvre</word>
-				<word>affiche</word>
-			</Words>
-			<Words>
-				<word>les</word>
-				<word>la</word>
-			</Words>
-			<Words>
-				<word>parametres</word>
-				<word>configuration</word>
-			</Words>
-		</Keywords>
-		<Reply>
-			<rep>Voila:</rep>
-			<rep>D'accord!</rep>
-			<rep>Ok</rep>
-		</Reply>
-		<Actions>
-			<action>settings show</action>
-		</Actions>
-	</Item>
+  <Item>
+    <Keywords maxWord="7" minWord="5">
+      <Words>
+        <word>nom</word>
+      </Words>
+      <Words>
+        <word>change</word>
+      </Words>
+      <Words>
+        <word>mon</word>
+      </Words>
+    </Keywords>
+    <Var max="3">
+      <word>en</word>
+    </Var>
+    <Reply>
+      <rep>Ok, à partir de maintenant je vous appellerai ?1</rep>
+      <rep>D'accord, je vous appellerai ?1</rep>
+      <rep>Ok, j'ai enregistré votre nom, je vous appellerai maintenant ?1</rep>
+    </Reply>
+    <Actions>
+      <action>settings name ?1</action>
+    </Actions>
+  </Item>
+  <Item id="mise_a_jour_nom" needId="null">
+    <Keywords maxWord="6" minWord="3">
+      <Words>
+        <word>je</word>
+        <word>mon</word>
+      </Words>
+      <Words>
+        <word>m'appelle</word>
+        <word>nomme</word>
+        <word>nom</word>
+      </Words>
+      <NoWords>
+        <word>comment</word>
+        <word>quel</word>
+      </NoWords>
+    </Keywords>
+    <Var max="3">
+      <word>est</word>
+      <word>m'appelle</word>
+      <word>nomme</word>
+      <word>nom</word>
+    </Var>
+    <Reply>
+      <condition if="?1=?name">
+        <rep>Ok, je me posais la question, mais maintenant je sais 😄</rep>
+        <rep>C'est bien ce que je croyais, vous vous appelez ?name</rep>
+      </condition>
+      <else>
+        <rep>Moi, je pensais que vous vous appelliez ?name, j'ai donc mis à jour votre nom</rep>
+        <rep>Ah, d'accord, je ne savais pas, j'ai fait la mise à jour !</rep>
+      </else>
+    </Reply>
+    <Actions>
+      <condition if="?1!?name">
+        <action>settings name ?1</action>
+      </condition>
+    </Actions>
+  </Item>
+  <Item>
+    <Keywords maxWord="3" minWord="3">
+      <Words>
+        <word>ouvre</word>
+        <word>affiche</word>
+      </Words>
+      <Words>
+        <word>les</word>
+        <word>la</word>
+      </Words>
+      <Words>
+        <word>parametres</word>
+        <word>configuration</word>
+        <word>reglages</word>
+      </Words>
+    </Keywords>
+    <Reply>
+      <rep>Voila:</rep>
+      <rep>D'accord!</rep>
+      <rep>Ok</rep>
+      <rep>👍</rep>
+    </Reply>
+    <Actions>
+      <action>settings show</action>
+    </Actions>
+  </Item>
 </data>
