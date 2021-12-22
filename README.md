@@ -1,6 +1,6 @@
 # ControlSettings
 
-[![License](https://img.shields.io/badge/license-GPLv3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html) [![GitHub issues](https://img.shields.io/github/issues/Swiftapp-hub/ControlSettings-Plugin-Swifty-Assistant.svg)](https://github.com/Swiftapp-hub/ControlSettings-Plugin-Swifty-Assistant/issues) [![Maintained](https://img.shields.io/maintenance/yes/2021.svg)](https://github.com/Swiftapp-hub/ControlSettings-Plugin-Swifty-Assistant/commits/develop)
+[![License](https://img.shields.io/badge/license-GPLv3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html) [![GitHub issues](https://img.shields.io/github/issues/Swiftapp-hub/ControlSettings-Plugin-Swifty-Assistant.svg)](https://github.com/Swiftapp-hub/ControlSettings-Plugin-Swifty-Assistant/issues) [![Maintained](https://img.shields.io/maintenance/yes/2021.svg)](https://github.com/Swiftapp-hub/ControlSettings-Plugin-Swifty-Assistant/commits/master)
 
 ControlSettings is a plugin for [Swifty Assistant](https://github.com/Swiftapp-hub/Swifty-Assistant) that allows you to manage settings with commands!
 
