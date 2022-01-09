@@ -4,7 +4,7 @@
 
 ControlSettings is a plugin for [Swifty Assistant](https://github.com/Swiftapp-hub/Swifty-Assistant) that allows you to manage settings with commands!
 
-Compatible with Swifty Assistant v1.0.0-alpha2 or higher.
+Compatible with Swifty Assistant v1.0.0-alpha4 or higher.
 
 ## Installation
 
